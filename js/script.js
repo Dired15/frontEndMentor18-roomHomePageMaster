@@ -38,9 +38,6 @@ slideLeftMobile.addEventListener("click",function()
 {
     let value;
     value=slideDisplayed-1;
-
-    
-    illustrationImage="mobile-image-hero-"+value+".jpg";
     changeSlide(-1,true);
 })
 
@@ -49,8 +46,6 @@ slideRightMobile.addEventListener("click",function()
     let value;
     
     value=slideDisplayed+1;
-
-    illustrationImage="mobile-image-hero-"+value+".jpg";
     changeSlide(+1,true);
 })
 
@@ -85,8 +80,7 @@ function changeSlide(position,mobile)
     {
         illustrationImage="mobile-image-hero-"+slideDisplayed+".jpg";
     }
-    console.log("illustrationImage");
-    console.log(illustrationImage);
+    
     illustration.style.backgroundImage="url(\"assets/images/"+illustrationImage+"\")";
 }
 

@@ -44,6 +44,8 @@ body
 
 #illustration
 {
+    background-image:url("../assets/images/mobile-image-hero-2.jpg");
+    background-image:url("../assets/images/mobile-image-hero-3.jpg");
     background-image:url("../assets/images/mobile-image-hero-1.jpg");
     background-repeat:no-repeat;
     background-position:right bottom;
