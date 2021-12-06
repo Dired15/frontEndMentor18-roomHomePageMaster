@@ -122,6 +122,12 @@ header nav
 
 }
 
+.slideButton div:hover
+{
+    background-color:hsl(0, 0%, 27%);
+    cursor:pointer;
+}
+
 .slideLeft
 {
     background-image:url("../assets/images/icon-angle-left.svg");
@@ -213,7 +219,11 @@ header nav
     background-repeat:no-repeat;
     background-position:right center;
     background-size:25% 100%;
-    
+}
+
+#shopNowButton:hover
+{
+    cursor:pointer;
 }
 
 #introduction .slideButton
@@ -380,6 +390,7 @@ header nav
 
     #illustration nav
     {
+        height:100%;
         display:flex;
         width:35%;
         
@@ -387,6 +398,7 @@ header nav
 
     #illustration ul 
     {
+        height:100%;
         width:100%;
         display:flex;
         justify-content:space-between;
@@ -396,10 +408,22 @@ header nav
 
     #illustration li 
     {
+        
+        box-sizing: content-box;
+        display:flex;
+        align-items:center;
         color:white;
         font-size:0.7rem;
         font-weight:600;
+        height:100%;
+        
 
+    }
+
+    #illustration li:hover 
+    {
+        cursor:pointer;
+        border-bottom:solid white;
     }
 
     #illustration .slideButton
