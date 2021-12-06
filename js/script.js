@@ -26,6 +26,8 @@ function displayMenu()
 
 let slideLeftMobile=document.querySelector("#illustration .slideLeft");
 let slideRightMobile=document.querySelector("#illustration .slideRight");
+let slideLeft=document.querySelector("#introduction .slideLeft");
+let slideRight=document.querySelector("#introduction .slideRight")
 let slide=document.querySelectorAll(".slide");
 let illustration=document.getElementById("illustration");
 let illustrationImage;
@@ -36,17 +38,22 @@ console.log(slide);
 
 slideLeftMobile.addEventListener("click",function()
 {
-    let value;
-    value=slideDisplayed-1;
     changeSlide(-1,true);
 })
 
 slideRightMobile.addEventListener("click",function()
 {
-    let value;
-    
-    value=slideDisplayed+1;
     changeSlide(+1,true);
+})
+
+slideLeft.addEventListener("click",function()
+{
+    changeSlide(-1,false);
+})
+
+slideRight.addEventListener("click",function()
+{
+    changeSlide(+1,false);
 })
 
 
@@ -79,6 +86,10 @@ function changeSlide(position,mobile)
     if(mobile)
     {
         illustrationImage="mobile-image-hero-"+slideDisplayed+".jpg";
+    }
+    else
+    {
+        illustrationImage="desktop-image-hero-"+slideDisplayed+".jpg";
     }
     
     illustration.style.backgroundImage="url(\"assets/images/"+illustrationImage+"\")";
